@@ -1,0 +1,42 @@
+/* Navbar.module.css */
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For WebKit browsers */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    padding: 10px 20px; /* Adjust padding */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    top: 0; /* Top aligned */
+    left: 0; /* Left aligned */
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between brand and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+    color: #b61414; /* White text color */
+    font-size: 1.5rem; /* Adjust as needed */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-nav {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal layout */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Space between nav items */
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(125, 113, 113, 0.7); /* Slightly lighter color on hover */
+}

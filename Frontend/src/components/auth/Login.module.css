@@ -1,0 +1,86 @@
+h3{
+    text-align: center;
+}
+.background {
+    background-image: url('../../assets/big-abstract-multicolored-bubbles-texture.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    color: #3f3d3d;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(101, 7, 7, 0.7);
+}
+
+input[type="checkbox"] {
+    accent-color: #007bff;
+}
+
+.btn {
+    background-color: rgba(0, 123, 255, 0.8);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+.forgot-password,
+.create-account {
+    margin-top: 10px;
+}
+
+.forgot-password a,
+.create-account a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 123, 255, 0.2);
+    display:inline-flexbox;
+    transition: background-color 0.3s ease;
+}
+
+.forgot-password a:hover,
+.create-account a:hover {
+    background-color: rgba(0, 123, 255, 0.5);
+}
