@@ -5,11 +5,12 @@ h3{
     background-image: url('../../assets/big-abstract-multicolored-bubbles-texture.jpg'); 
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height to allow for scrolling if content grows */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .glass {
     background: rgba(255, 255, 255, 0.1);
@@ -84,3 +85,29 @@ input[type="checkbox"] {
 .create-account a:hover {
     background-color: rgba(0, 123, 255, 0.5);
 }
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.linkButton {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+}
+
+.linkButton:hover,
+.linkButton:focus {
+    text-decoration: none;
+    outline: none;
+}
+

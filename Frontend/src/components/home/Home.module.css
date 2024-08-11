@@ -1,0 +1,69 @@
+.home {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.composeButton {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.composePopup {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px 10px 0 0;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.formGroup {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 14px;
+    color: #333;
+}
+
+.inputField {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(0, 0, 0) !important;
+    background-color: white;
+}
+
+.editorWrapper {
+    margin-bottom: 10px;
+}
+
+.editor {
+    width: 100%;
+    height: 40vh;
+    border: 1px solid #715656;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sendButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

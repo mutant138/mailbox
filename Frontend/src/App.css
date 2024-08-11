@@ -1,0 +1,11 @@
+
+.home {
+    max-height: 100vh; /* Ensures the element does not exceed viewport height */
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite !important ;
+}
