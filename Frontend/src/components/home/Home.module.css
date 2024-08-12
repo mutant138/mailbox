@@ -67,3 +67,26 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* Inbox.module.css */
+/* Inbox.module.css */
+.emailItem {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 100%; /* Ensure item fits within container */
+    overflow: hidden; /* Hide overflow */
+}
+
+.emailDetails {
+    white-space: nowrap; /* Prevent line breaks */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+.emailItem:hover .emailDetails {
+    overflow-x: auto; /* Enable horizontal scrolling on hover */
+    white-space: nowrap; /* Ensure text doesn't wrap */
+}
+

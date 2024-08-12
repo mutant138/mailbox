@@ -6,6 +6,9 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import styles from './Home.module.css';
 import { useSelector } from 'react-redux';
 import Inbox from './Inbox';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Home = () => {
     const { user } = useSelector((state) => state.auth);
@@ -36,7 +39,8 @@ const Home = () => {
         try {
             await axios.post(`https://fir-620df-default-rtdb.firebaseio.com/emails/${sender.replace('.', '_')}/sent.json`, emailData);
             await axios.post(`https://fir-620df-default-rtdb.firebaseio.com/emails/${recipient.replace('.', '_')}/inbox.json`, emailData);
-            alert("Email sent successfully!");
+            // alert("Email sent successfully!");
+            toast.success("Email sent successfully!");
             setIsComposeOpen(false);
             setRecipient('');
             setSubject('');
@@ -82,7 +86,9 @@ const Home = () => {
                     <button onClick={sendEmail} className={styles.sendButton}>Send</button>
                 </div>
             )}
+             <ToastContainer />
             <Inbox />
+           
         </div>
     );
 };

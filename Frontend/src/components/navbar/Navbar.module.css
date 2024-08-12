@@ -34,19 +34,20 @@
 
 .navbar-nav .nav-item {
     margin-left: 20px !important; /* Space between nav items */
-    display: flex; /* Ensure items align properly */
-    align-items: center; /* Center content vertically */
-    white-space: nowrap; /* Prevent text from wrapping */
+    display: flex !important; /* Ensure items align properly */
+    align-items: center !important; /* Center content vertically */
+    white-space: nowrap !important; /* Prevent text from wrapping */
 }
 
 .navbar-nav .nav-link {
-    color: #000000 !important; /* Text color */
-    text-decoration: none !important; /* Remove underline from links */
-    padding: 10px !important; /* Add padding for clickable area */
+    color: #a30909 !important; 
+    text-decoration: none !important; 
+    padding: 3px !important; 
+    border:thin !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(125, 113, 113, 0.7); /* Slightly lighter color on hover */
+    color: rgba(125, 113, 113, 0.7) !important; /* Slightly lighter color on hover */
 }
 
 .navbar-nav .nav-item span {
@@ -54,3 +55,4 @@
     font-size: 14px; /* Adjust font size */
     margin-left: 10px; /* Space between button and text */
 }
+

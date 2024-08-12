@@ -1,37 +1,61 @@
-.inbox {
-    padding: 20px;
+/* Inbox.module.css */
+.inboxContainer {
+    padding: 10px;
 }
 
-.email {
+.emailItem {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
-    font-size: 14px;
     cursor: pointer;
+    position: relative;
+    max-width: 100%; /* Ensure the item fits within the container */
 }
 
-.email h4 {
+.emailItem.unread h4 {
+    font-weight: bold;
+}
+
+.blueDot {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.emailDetails {
+    flex-grow: 1;
+    margin-left: 20px;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+.emailDetails h4 {
     margin: 0;
-    flex: 1;
     font-size: 16px;
 }
 
-.email p {
+.emailDetails p {
     margin: 0;
-    flex: 2;
     color: #666;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
-.email small {
-    margin-left: 10px;
+.emailItem small {
     color: #999;
 }
 
-.email:hover {
-    background-color: #f9f9f9;
+/* Add styling for expanded view or hovering */
+.emailItem:hover .emailDetails {
+    overflow: visible; /* Show full content on hover */
+    white-space: normal; /* Allow text to wrap */
 }
